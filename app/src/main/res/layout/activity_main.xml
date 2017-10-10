@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fskj.customview.MainActivity">
+
+    <com.fskj.customview.view.CircleImageView
+        app:border_color="@color/colorAccent"
+        app:border_width="2dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.fskj.customview.view.TimeLineLayout
+        android:id="@+id/timeLineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp"
+        app:tll_dotColor="@color/colorAccent"
+        app:tll_dotRadius="4dp"
+        app:tll_height="40dp"
+        app:tll_lineColor="#E4E4E4"
+        app:tll_lineWidth="1px"
+        app:tll_padding="16dp"
+        app:tll_textColor="@android:color/black"
+        app:tll_textSize="14sp"></com.fskj.customview.view.TimeLineLayout>
+    <Button
+        android:onClick="btn2RC"
+        android:text="圆角相对布局"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
